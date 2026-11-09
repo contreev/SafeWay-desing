@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SAFEWAY · Pantallas móviles</title>
+<style>
+:root{--n:#123A63;--p:#1976D2;--bg:#F3F7FA;--bd:#D9E2EC;--t2:#6B7C93;--g:#2EA66A;--r:#E5484D;--w:#F59E0B}
+*{box-sizing:border-box;margin:0;font-family:Inter,Arial,sans-serif}
+body{background:#E8EDF2;padding:32px}
+h1{color:var(--n);font-size:30px}.sub{color:var(--t2);font-size:13px;margin:6px 0 28px}
+.grid{display:grid;grid-template-columns:repeat(4,390px);gap:40px 40px}
+.lab{font-size:12px;font-weight:600;color:var(--n);margin-bottom:8px}
+.f{width:390px;height:844px;border-radius:28px;background:var(--bg);position:relative;overflow:hidden;padding:20px;color:var(--n);display:flex;flex-direction:column;gap:12px}
+.f.w{background:#fff}.f.dk{background:var(--n);color:#fff}.f.gr{background:#F1F8F4}
+.hd{background:var(--n);color:#fff;margin:-20px -20px 4px;padding:28px 20px 24px;border-radius:0 0 28px 28px}
+h2{font-size:22px;font-weight:700}h3{font-size:14px;font-weight:600}
+.s{font-size:12px;color:var(--t2)}.hd .s,.dk .s{color:#B9C9DB}
+.c{background:#fff;border-radius:16px;box-shadow:0 2px 8px #0000000f;padding:12px 14px;display:flex;align-items:center;gap:12px}
+.ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:18px;flex:none}
+.b{background:#E8F1FB;color:var(--p)}.rd{background:#FDECEC;color:var(--r)}.gn{background:#E8F6EE;color:var(--g)}.or{background:#FFF3E0;color:var(--w)}.yl{background:#FFF6D6;color:#B7791F}
+.fl{flex:1}.rt{font-size:12px;font-weight:600;color:var(--n)}
+.lb{font-size:12px;font-weight:500;margin-bottom:4px;display:block}
+.in{height:44px;border:1px solid var(--bd);border-radius:12px;background:#fff;padding:0 14px;font-size:13px;display:flex;align-items:center;justify-content:space-between;color:#98A6B8;margin-bottom:10px}
+.in.v{color:var(--n)}.ta{height:72px;align-items:flex-start;padding-top:12px}
+.bt{height:46px;border-radius:12px;background:var(--p);color:#fff;font-weight:600;font-size:14px;display:grid;place-items:center;box-shadow:0 4px 10px #1976d233}
+.bt.r{background:var(--r)}.bt.o{background:#fff;color:var(--p);border:1px solid var(--p);box-shadow:none}.bt.og{background:#F1F8F4;color:var(--g);border:1px solid var(--bd);box-shadow:none}
+.lk{color:var(--p);font-size:12px;font-weight:600}.ct{text-align:center}
+.bk{width:36px;height:36px;border-radius:10px;background:#fff;border:1px solid var(--bd);display:grid;place-items:center;flex:none}
+.row{display:flex;align-items:center;gap:10px}
+.ch{padding:7px 14px;border-radius:99px;border:1px solid var(--bd);background:#fff;font-size:12px;font-weight:600}.ch.a{background:var(--n);color:#fff}
+.tg{width:46px;height:26px;border-radius:99px;background:var(--g);position:relative}.tg:after{content:"";position:absolute;right:3px;top:3px;width:20px;height:20px;border-radius:50%;background:#fff}
+.tg.off{background:#CBD5E1}.tg.off:after{right:auto;left:3px}
+.tab{position:absolute;left:0;right:0;bottom:0;height:64px;background:#fff;display:flex;justify-content:space-around;align-items:center;font-size:10px;color:var(--t2);font-weight:600;border-top:1px solid #EEF2F6}
+.tab div{text-align:center}.tab span{display:block;font-size:18px}.tab .on{color:var(--p)}
+.tag{font-size:10px;font-weight:700;letter-spacing:.5px}
+.pill{display:inline-block;background:var(--r);color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px}
+.map{position:relative;background:linear-gradient(135deg,#DDE9DD,#CFE0CF);border-radius:16px;overflow:hidden}
+.map:before{content:"";position:absolute;inset:0;background:linear-gradient(20deg,transparent 48%,#B9C7BA 48% 51%,transparent 51%),linear-gradient(100deg,transparent 40%,#c9d6c9 40% 44%,transparent 44%)}
+.pn{position:absolute;font-size:20px}.me{position:absolute;width:22px;height:22px;border-radius:50%;background:var(--p);border:4px solid #fff;box-shadow:0 2px 6px #0004}
+.zn{position:absolute;border-radius:50%;background:#E5484D33;border:1px solid #E5484D88}
+.rt2{position:absolute;border-top:3px dashed var(--p);width:90px;transform:rotate(-8deg)}
+.ft{font-size:10px;color:var(--t2);text-align:center}
+.dsh{border:1.5px dashed var(--bd);border-radius:12px;padding:14px;text-align:center;color:var(--p);font-size:12px;font-weight:600}
+.al{background:#FFF3D6;color:#8A5A00;font-size:11px;padding:10px;border-radius:10px}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:700;flex:none}
+.sp{flex:1}
+
+.bar{display:flex;gap:10px;align-items:center;margin-bottom:24px}
+.bar button{font:600 12px Inter,Arial;border:0;border-radius:10px;padding:10px 14px;background:var(--n);color:#fff;cursor:pointer}
+.bar button.alt{background:#fff;color:var(--n);border:1px solid var(--bd)}
+.hint{font-size:12px;color:var(--t2)}
+.lnk{cursor:pointer}.lnk:hover{outline:2px solid #1976D255;outline-offset:2px}
+body.proto .grid{display:block}
+body.proto .grid>div{display:none;width:390px;margin:0 auto}
+body.proto .grid>div.cur{display:block}
+body.proto .f{box-shadow:0 20px 50px #123A6333}
+body.proto h1,body.proto .sub{text-align:center}
+body.proto .bar{justify-content:center}
+@media(max-width:500px){body{padding:10px}body.proto h1,body.proto .sub,body.proto .hint{display:none}body.proto .bar{margin-bottom:10px}body.proto .grid>div{width:100%}.f{width:100%}.lab{display:none}}
+#qm{display:none;position:fixed;inset:0;background:#123A63cc;z-index:99;align-items:center;justify-content:center}#qm.on{display:flex}#qb{background:#fff;border-radius:20px;padding:24px;text-align:center;color:var(--n);max-width:300px}#qb h3{font-size:16px;margin-bottom:4px}#qc{display:flex;justify-content:center;margin:14px 0}#qb button{font:600 12px Inter,Arial;border:0;border-radius:10px;padding:10px 16px;background:var(--p);color:#fff;cursor:pointer}
+</style></head><body>
+<h1>Pantallas móviles</h1><p class="sub">16 frames · 390 × 844 px · Datos ficticios de demostración</p>
+<div class="bar"><button id="bp">▶ Modo prototipo</button><button id="bq" class="alt">📱 Código QR</button><span class="hint" id="ht"></span></div>
+<div id="qm"><div id="qb"><h3>Escanea para abrir SAFEWAY</h3><div class="s">Apunta la cámara de tu celular</div><div id="qc"></div><button id="qx">Cerrar</button></div></div>
+<div class="grid" id="g"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+const T=a=>`<div class="tab">${[['⌂','Inicio'],['🔔','Alertas'],['🗺','Mapa'],['👥','Contactos'],['👤','Perfil']].map((x,i)=>`<div class="${i==a?'on':''}"><span>${x[0]}</span>${x[1]}</div>`).join('')}</div>`;
+const I=(l,p,v)=>`<div><span class="lb">${l}</span><div class="in ${v?'v':''}">${v||p}</div></div>`;
+const C=(i,k,t,s,r='')=>`<div class="c"><div class="ic ${k}">${i}</div><div class="fl"><h3>${t}</h3><div class="s">${s}</div></div><div class="rt">${r}</div></div>`;
+const H=(t,s)=>`<div class="row"><div class="bk">←</div><div><h2 style="font-size:18px">${t}</h2><div class="s">${s}</div></div></div>`;
+const B=(t,c='')=>`<div class="bt ${c}">${t}</div>`;
+const M=(h,x='')=>`<div class="map" style="height:${h}px">${x}<div class="zn" style="width:90px;height:70px;right:-20px;top:-10px"></div><div class="zn" style="width:70px;height:60px;left:20px;bottom:10px"></div><div class="pn" style="left:60px;top:30px">📍</div><div class="pn" style="right:80px;top:50px">📍</div><div class="me" style="left:46%;top:50%"></div><div class="rt2" style="left:30%;top:70%"></div></div>`;
+const Lg=`<div class="row" style="gap:6px"><div style="background:#fff;border-radius:12px;width:44px;height:44px;display:grid;place-items:center">🛡</div></div>`;
+const S=[
+['01 · Splash',`<div class="f dk"><div class="sp"></div><div class="ct"><div style="width:60px;height:60px;border-radius:16px;background:#fff;margin:0 auto 14px;display:grid;place-items:center;font-size:30px">🛡</div><h2 style="font-size:28px;letter-spacing:3px">SAFEWAY</h2><div class="s">Tu seguridad, nuestra prioridad</div></div><div class="sp"></div><div class="s ct">Información preventiva y herramientas de apoyo para la comunidad de Bogotá.</div>${B('Comenzar  ›')}<div class="ft">Prototipo informativo · No es un canal oficial</div></div>`],
+['02 · Inicio de sesión',`<div class="f"><div class="hd" style="height:190px"><b style="letter-spacing:2px">🛡 SAFEWAY</b><h2 style="margin-top:44px;font-size:26px">Bienvenido de nuevo</h2><div class="s">Ingresa para mantenerte conectado.</div></div>${I('Correo electrónico','','demo@safeway.co')}${I('Contraseña','','••••••••••')}<div class="lk" style="text-align:right">¿Olvidaste tu contraseña?</div>${B('Iniciar sesión')}<div class="s ct">¿No tienes una cuenta? <span class="lk">Regístrate</span></div></div>`],
+['03 · Registro de usuario',`<div class="f">${H('Crear cuenta','Únete a la red de prevención')}${I('Nombre completo','Ej. Laura Gómez')}${I('Documento','Número de identificación')}${I('Correo electrónico','nombre@correo.com')}${I('Teléfono','+57 300 000 0000')}${I('Contraseña','Mínimo 8 caracteres')}<div class="s">☐ Acepto los términos y el tratamiento de datos para fines demostrativos.</div>${B('Crear mi cuenta')}</div>`],
+['04 · Permisos',`<div class="f w"><div class="ic b" style="width:60px;height:60px;margin:30px auto 0;font-size:28px">🧭</div><h2 class="ct" style="font-size:26px;margin-top:10px">Mantente protegido</h2><div class="s ct">Activa estos permisos para recibir alertas relevantes cerca de ti.</div><div style="height:12px"></div><div class="c"><div class="ic b">◎</div><div class="fl"><h3>Ubicación</h3><div class="s">Alertas según tu zona</div></div><div class="tg"></div></div><div class="c"><div class="ic or">🔔</div><div class="fl"><h3>Notificaciones</h3><div class="s">Avisos en tiempo real</div></div><div class="tg"></div></div><div class="sp"></div>${B('Continuar  ›')}<div class="ft" style="font-weight:600">Configurar más tarde</div></div>`],
+['05 · Dashboard principal',`<div class="f"><div class="hd" style="height:150px"><div class="s">Miércoles, 14 de agosto</div><h2>Hola, Laura</h2><div class="c" style="background:#ffffff1f;box-shadow:none;margin-top:14px;color:#fff"><div class="ic gn">🛡</div><div><h3>Tu zona está estable</h3><div class="s">Chapinero · Actualizado hace 5 min</div></div></div></div><div class="tag lk">ACCIÓN RÁPIDA</div><h2 style="font-size:18px">¿Necesitas ayuda?</h2><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div class="c rd" style="display:block;height:88px;color:var(--r)"><div>▢</div><h3>Reportar zona</h3><div class="s">Informa una novedad</div></div><div class="c gn" style="display:block;height:88px;color:var(--g)"><div>🛡</div><h3>Estoy a salvo</h3><div class="s">Avisa a tus contactos</div></div><div class="c b" style="display:block;height:88px"><div>📍</div><h3>Puntos seguros</h3><div class="s">Encuentra refugios</div></div><div class="c yl" style="display:block;height:88px"><div>🔍</div><h3>Buscar personas</h3><div class="s">Reportes ciudadanos</div></div></div><div class="row" style="justify-content:space-between"><h3 style="font-size:16px">Alertas recientes</h3><span class="lk">Ver todas</span></div>${C('!','rd','Deslizamiento preventivo','Vía a La Calera · Hace 12 min','›')}<div class="ft">Contenido ficticio para demostración.</div>${T(0)}</div>`],
+['06 · Centro de alertas',`<div class="f"><div class="row" style="justify-content:space-between"><div><h2>Centro de alertas</h2><div class="s">Actualizaciones de tu ciudad</div></div><div class="bk">☰</div></div><div class="row"><span class="ch a">Todas</span><span class="ch">Alta</span><span class="ch">Media</span><span class="ch">Informativas</span></div>${C('!','rd','Deslizamiento preventivo','📍 Vía a La Calera · Chapinero','Hace 12 min')}${C('🔔','or','Lluvias intensas','📍 Suba y Usaquén','Hace 35 min')}${C('🛡','b','Simulacro local','📍 Teusaquillo','Hoy, 3:00 p. m.')}<div class="dsh" style="color:var(--t2);border-radius:14px">Las alertas mostradas son datos ficticios de demostración.</div>${T(1)}</div>`],
+['07 · Mapa de Bogotá',`<div class="f" style="padding:0">${M(844)}<div class="c" style="position:absolute;top:20px;left:12px;right:12px;height:44px">← &nbsp; <span class="s">🔍 Buscar barrio o dirección</span></div><div class="c" style="position:absolute;left:12px;right:12px;bottom:76px;flex-wrap:wrap"><div class="ic gn">➤</div><div class="fl"><h3>Ruta sugerida a zona segura</h3><div class="s">Parque de los Hippies · 6 min caminando</div></div><div class="bt" style="width:36px;height:30px;font-size:12px">Ir</div><div class="s">🔴 Riesgo &nbsp;🟢 Punto seguro &nbsp;— Ruta</div></div>${T(2)}</div>`],
+['08 · Puntos seguros',`<div class="f">${H('Puntos seguros','Cerca de tu ubicación')}${M(140)}<div class="row" style="justify-content:space-between"><h3 style="font-size:16px">Cerca de ti</h3><span class="s" style="color:var(--g);font-weight:700">3 disponibles</span></div>${C('📍','gn','Parque de los Hippies','Punto de encuentro · Chapinero','450 m')}${C('📍','gn','Colegio Manuela Beltrán','Refugio temporal · Teusaquillo','1,2 km')}${C('📍','rd','Hospital San Ignacio','Atención médica · Chapinero','1,8 km')}</div>`],
+['09 · Reportar zona',`<div class="f">${H('Reportar zona','Ayuda a informar a la comunidad')}${I('Tipo de afectación','','Selecciona una opción ⌄')}${I('Ubicación','','Chapinero, Bogotá 📍')}<div><span class="lb">Descripción</span><div class="in ta">Cuéntanos qué está ocurriendo...</div></div><span class="lb">Evidencia (opcional)</span><div class="dsh" style="height:84px">📷<br>Agregar foto o video</div><div class="al"><b>Importante:</b> no te expongas al peligro para realizar un reporte.</div>${B('Enviar reporte','r')}</div>`],
+['10 · Estoy a salvo',`<div class="f gr"><div class="bk">✕</div><div class="sp"></div><div class="ic gn" style="width:110px;height:110px;border-radius:50%;margin:0 auto;font-size:48px">🛡</div><h2 class="ct" style="font-size:28px">¿Estás a salvo?</h2><div class="s ct">Enviaremos una confirmación con tu ubicación aproximada a tus contactos de emergencia.</div><div class="c" style="display:block"><div class="tag s">SE NOTIFICARÁ A</div><div class="row" style="margin:8px 0"><div class="av" style="background:var(--p)">MG</div><div class="av" style="background:#E8920F;margin-left:-14px">CR</div><div class="av" style="background:#8E5CC9;margin-left:-14px">JP</div></div><div class="s">Mamá, Carlos y Juan</div></div><div class="sp"></div>${B('✓ Sí, estoy a salvo')}${B('Gestionar contactos','og')}</div>`],
+['11 · Contactos de emergencia',`<div class="f"><div class="row" style="justify-content:space-between"><div><h2 style="font-size:19px">Contactos de emergencia</h2><div class="s">Personas que pueden ayudar</div></div><div class="bt" style="width:30px;height:30px">+</div></div><div class="c" style="background:var(--n);color:#fff"><span>📞</span><div class="fl"><h3>Línea única de emergencias</h3><div class="s">Solo para emergencias reales</div></div><b style="background:#fff;color:var(--n);padding:6px 12px;border-radius:8px">123</b></div><h3 style="font-size:16px">Mis contactos</h3>${[['MG','var(--p)','Marta Gómez','Mamá · +57 310 555 0184'],['CR','#E8920F','Carlos Ruiz','Hermano · +57 300 555 9921'],['JP','#8E5CC9','Juan Pérez','Amigo · +57 315 555 1042']].map(x=>`<div class="c"><div class="av" style="background:${x[1]}">${x[0]}</div><div class="fl"><h3>${x[2]}</h3><div class="s">${x[3]}</div></div><div class="ic gn" style="width:34px;height:34px">📞</div></div>`).join('')}${T(3)}</div>`],
+['12 · Búsqueda de personas',`<div class="f"><h2>Personas</h2><div class="s" style="margin-top:-8px">Reportes ciudadanos de ejemplo</div><div class="in">🔍 &nbsp;Buscar por nombre o documento<span></span></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><span class="ch a ct">Desaparecidas</span><span class="ch ct">Encontradas</span></div>${[['AM','#DCEAFB','Andrés Martínez','35 años · Visto en Kennedy'],['SR','#FBE0E0','Sofía Rodríguez','17 años · Vista en Suba']].map(x=>`<div class="c" style="align-items:flex-start"><div style="width:68px;height:68px;border-radius:14px;background:${x[1]};display:grid;place-items:center;font-weight:700;font-size:18px">${x[0]}</div><div><span class="pill" style="background:#FDECEC;color:var(--r)">BÚSQUEDA ACTIVA</span><h3 style="margin:5px 0 2px">${x[2]}</h3><div class="s">${x[3]}</div><div class="lk" style="margin-top:4px">Ver información</div></div></div>`).join('')}${B('+ Reportar una persona','o')}<div class="ft">Nombres e información ficticios.</div>${T(3)}</div>`],
+['13 · Reportar persona',`<div class="f">${H('Reportar persona','Completa la información disponible')}${I('Tipo de reporte','','Persona desaparecida ⌄')}<div style="width:70px;height:70px;border-radius:50%;border:1.5px dashed var(--p);margin:0 auto;display:grid;place-items:center;font-size:10px;color:var(--p);font-weight:700">📷<br>Agregar foto</div>${I('Nombre completo','Nombre de la persona')}<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">${I('Edad','Edad')}${I('Fecha','dd/mm/aaaa')}</div>${I('Último lugar visto','Barrio o dirección')}<div><span class="lb">Señas particulares</span><div class="in ta">Vestimenta, rasgos...</div></div>${B('Enviar para revisión')}</div>`],
+['14 · Perfil de usuario',`<div class="f"><div class="hd" style="height:200px"><div class="row" style="justify-content:space-between"><h3 style="font-size:17px">Mi perfil</h3>⚙</div><div class="row" style="margin-top:20px;gap:14px"><div class="av" style="background:#fff;color:var(--p);width:64px;height:64px;border-radius:16px;font-size:20px">LG</div><div><h2>Laura Gómez</h2><div class="s">Chapinero, Bogotá</div><span class="pill" style="background:#1d5b49;color:#7DF0B0;margin-top:6px">✓ Perfil verificado</span></div></div></div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">${[['3','Contactos'],['5','Reportes'],['12','Alertas']].map(x=>`<div class="c ct" style="display:block"><h2>${x[0]}</h2><div class="s">${x[1]}</div></div>`).join('')}</div>${['Datos personales','Mi ubicación','Información médica','Historial de actividad'].map(t=>`<div class="c"><span class="lk">▣</span><h3 class="fl" style="font-weight:500">${t}</h3>›</div>`).join('')}${T(4)}</div>`],
+['15 · Configuración',`<div class="f"><div class="row"><div class="bk">←</div><h2 style="font-size:20px">Configuración</h2></div><div class="tag s">NOTIFICACIONES</div><div class="c" style="display:block">${[['Alertas push',1],['Sonido',1],['Vibración',0]].map(x=>`<div class="row" style="justify-content:space-between;padding:8px 0"><h3>${x[0]}</h3><div class="tg ${x[1]?'':'off'}"></div></div>`).join('')}</div><div class="tag s">PREFERENCIAS</div><div class="c" style="display:block">${[['Zona principal','Chapinero ›'],['Idioma','Español ›'],['Privacidad y datos','›']].map(x=>`<div class="row" style="justify-content:space-between;padding:8px 0"><h3>${x[0]}</h3><span class="s">${x[1]}</span></div>`).join('')}</div><div class="tag s">ACERCA DE</div><div class="c"><h3 class="fl">Versión de la aplicación</h3><span class="s">1.0.0</span></div><div class="bt" style="background:#fff;color:var(--r);border:1px solid #F3B8BA;box-shadow:none">Cerrar sesión</div></div>`],
+['16 · Detalle de alerta',`<div class="f"><div class="hd" style="background:var(--r);height:190px;border-radius:0"><div class="bk" style="background:#ffffff33;border:0;color:#fff">←</div><div class="tag" style="margin-top:14px">⚠ ALERTA DE PRIORIDAD ALTA</div><h2 style="font-size:25px;margin-top:6px">Deslizamiento preventivo en la vía a La Calera</h2><div class="s" style="color:#fff">Publicado hace 12 minutos · Actualizado ahora</div></div>${M(130)}<div class="c" style="display:block"><h3>Descripción</h3><div class="s" style="margin-top:4px">Se reporta cierre preventivo en un tramo de la vía por condiciones del terreno después de lluvias. Evita desplazarte por el sector.</div></div><div class="c" style="display:block"><h3>Recomendaciones</h3><div class="s" style="margin-top:4px;line-height:1.7"><span style="color:var(--g)">✓</span> Evita la zona señalada en el mapa.<br><span style="color:var(--g)">✓</span> Usa vías alternas y mantente informado.<br><span style="color:var(--g)">✓</span> No compartas información sin verificar.</div></div><div class="row">${B('🗺 Ver mapa').replace('class="bt','style="flex:1" class="bt')}<div class="bk" style="width:44px;height:44px">➤</div></div></div>`]
+];
+g.innerHTML=S.map(s=>`<div><div class="lab">${s[0]}</div>${s[1]}</div>`).join('');
+
+const W=[...g.children],F=[...document.querySelectorAll('.f')];let cur=0;
+function go(i){cur=i;document.body.classList.add('proto');W.forEach((w,k)=>w.classList.toggle('cur',k==i));ht.textContent=S[i][0]+' · haz clic en los botones';scrollTo(0,0)}
+function grid(){document.body.classList.remove('proto')}
+bp.onclick=()=>go(cur);
+const Q='.bt,.c,.bk,.lk,.ch,.dsh,.tab>div,.row';
+function L(i,txt,to,sel=Q){const e=[...F[i].querySelectorAll(sel)].find(x=>x.textContent.includes(txt));if(e){e.classList.add('lnk');e.addEventListener('click',ev=>{ev.stopPropagation();go(to)})}}
+const TB=[['Inicio',4],['Alertas',5],['Mapa',6],['Contactos',10],['Perfil',13]];
+F.forEach((f,i)=>{f.querySelectorAll('.tab>div').forEach((d,k)=>{d.classList.add('lnk');d.onclick=()=>go(TB[k][1])})});
+const BK=(i,to)=>{const e=F[i].querySelector('.bk');if(e){e.classList.add('lnk');e.onclick=()=>go(to)}};
+L(0,'Comenzar',1,'.bt');
+L(1,'Iniciar sesión',3,'.bt');L(1,'Regístrate',2,'div');
+BK(2,1);L(2,'Crear mi cuenta',3,'.bt');
+L(3,'Continuar',4,'.bt');L(3,'Configurar más tarde',4,'.ft');
+L(4,'Reportar zona',8,'.c');L(4,'Estoy a salvo',9,'.c');L(4,'Puntos seguros',7,'.c');L(4,'Buscar personas',11,'.c');L(4,'Ver todas',5,'span');L(4,'Deslizamiento',15,'.c');
+['Deslizamiento','Lluvias','Simulacro'].forEach(t=>L(5,t,15,'.c'));
+L(6,'Buscar barrio',4,'.c');L(6,'Ruta sugerida',7,'.c');
+BK(7,4);F[7].querySelectorAll('.c').forEach(c=>{c.classList.add('lnk');c.onclick=()=>go(6)});
+BK(8,4);L(8,'Enviar reporte',5,'.bt');
+L(9,'✕',4,'.bk');L(9,'Sí, estoy a salvo',4,'.bt');L(9,'Gestionar contactos',10,'.bt');
+L(11,'Reportar una persona',12,'.bt');
+F[11].querySelectorAll('.lk').forEach(e=>{e.classList.add('lnk');e.onclick=()=>go(11)});
+BK(12,11);L(12,'Enviar para revisión',11,'.bt');
+L(13,'Mi perfil',14,'.row');
+BK(14,13);L(14,'Cerrar sesión',0,'.bt');
+BK(15,5);L(15,'Ver mapa',6,'.bt');L(15,'➤',7,'.bk');
+L(1,'Olvidaste',1,'.lk');
+go(0);
+let qd=0;bq.onclick=()=>{qm.classList.add('on');if(!qd){try{new QRCode(qc,{text:location.href.split('#')[0],width:220,height:220,colorDark:'#123A63',colorLight:'#ffffff'});qd=1}catch(e){qc.textContent='No se pudo generar el QR'}}};qx.onclick=()=>qm.classList.remove('on');qm.onclick=e=>{if(e.target==qm)qm.classList.remove('on')};
+</script></body></html>
